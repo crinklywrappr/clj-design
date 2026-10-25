@@ -1,0 +1,33 @@
+clj-design
+
+This work is licensed under the Creative Commons Attribution 4.0 International
+License (CC BY 4.0). You are free to share and adapt the material, including for
+commercial purposes, provided you give appropriate credit, provide a link to the
+license, and indicate if changes were made.
+
+  Full legal code:        https://creativecommons.org/licenses/by/4.0/legalcode
+  Human-readable summary:  https://creativecommons.org/licenses/by/4.0/
+
+SPDX-License-Identifier: CC-BY-4.0
+
+--------------------------------------------------------------------------------
+ATTRIBUTION
+--------------------------------------------------------------------------------
+
+The reference material under skills/clj-design/guide/ is a condensed,
+source-faithful distillation of:
+
+    Elements of Clojure, by Zachary Tellman
+    https://elementsofclojure.com
+
+reproduced and adapted with the author's permission. The design insights are
+Zachary Tellman's. The condensation, the seven lenses, the code-time checks, and
+the skill scaffolding are by crinklywrappr. Any errors introduced by the
+condensation are not the author's.
+
+If you reuse this work, credit both:
+    - Zachary Tellman, "Elements of Clojure" (https://elementsofclojure.com)
+    - crinklywrappr, "clj-design" (https://github.com/crinklywrappr/clj-design)
+
+If you find this useful, buy the book. It is excellent, and far richer than any
+condensation.

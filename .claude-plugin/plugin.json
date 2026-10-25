@@ -1,0 +1,19 @@
+{
+  "name": "clj-design",
+  "displayName": "clj-design",
+  "description": "Elements-of-Clojure design guidance for Claude Code: naming, idioms, indirection, and composition as lenses, code-time checks, and an advise/review skill. A condensed, source-faithful distillation of Zachary Tellman's book, used with the author's permission (CC BY 4.0).",
+  "version": "1.0.0",
+  "author": {
+    "name": "crinklywrappr"
+  },
+  "homepage": "https://github.com/crinklywrappr/clj-design",
+  "repository": "https://github.com/crinklywrappr/clj-design",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "clojure",
+    "design",
+    "code-review",
+    "elements-of-clojure",
+    "claude-code"
+  ]
+}

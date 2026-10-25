@@ -1,38 +1,46 @@
 # clj-design
 
-A [Claude Code](https://claude.com/claude-code) **skill** that applies the design philosophy of Zachary
-Tellman's *Elements of Clojure* when you write, name, structure, or review Clojure code.
+A [Claude Code](https://claude.com/claude-code) plugin for Clojure design. It applies the design
+philosophy of Zachary Tellman's *Elements of Clojure* to how you name and structure Clojure code.
 
 ## What it does
-- **Advise (default):** answers Clojure naming / idiom / design decisions using the book's choosing
-  criteria and defaults, cited to the relevant chapter and lens.
-- **Review:** walks a set of design checks over a file, snippet, or `git diff` and returns prioritized,
-  *advisory* findings (not a dogmatic linter), each tied to a frame.
-- **Smart loading:** a routing table pulls in only the relevant reference file per question, so it stays
-  cheap until a Clojure design question actually needs it.
 
-It carries the book's own stance: **these are defaults and heuristics, not laws — judged in context.**
+- **Advise (the default):** it answers Clojure naming, idiom, and design questions with the book's
+  criteria and defaults, and it cites the related chapter and lens.
+- **Review:** it applies a set of design checks to a file, a snippet, or a `git diff`, and it gives
+  ranked, advisory results. It is not a strict linter. Each result points to a frame.
+- **Smart loading:** a routing table reads only the guide file for a question. Until then, the plugin
+  stays cheap.
+
+It keeps the book's own stance. These are defaults and heuristics, not laws, and you judge them in
+context.
 
 ## Install
-Clone into your Claude Code skills directory:
+
+This is a Claude Code plugin. In Claude Code, add the marketplace, then install the plugin:
+
 ```
-git clone <this-repo> ~/.claude/skills/clj-design
+/plugin marketplace add crinklywrappr/clj-design
+/plugin install clj-design@clj-design
 ```
-Then, in a new session, it auto-triggers on Clojure design/naming/review intent, or invoke it with
-`/clj-design`.
+
+In a new session it starts on its own for Clojure design, naming, or review work. You can also start it
+with `/clj-design`.
 
 ## Layout
-- `SKILL.md` — the skill: trigger, stance, seven lenses, routing table, review procedure.
-- `guide/` — the condensed reference (how-to + lenses, four chapters, code-time checks).
 
-## Provenance & copyright — please read
-The `guide/` content is a **condensed derivative of a copyrighted, commercial book**:
+- `.claude-plugin/`: the plugin and marketplace manifests.
+- `skills/clj-design/SKILL.md`: the skill file, with its stance, seven lenses, routing table, and review
+  procedure.
+- `skills/clj-design/guide/`: the condensed guide, with the how-to and lenses, four chapters, and
+  code-time checks.
 
-> *Elements of Clojure* © 2016–2019 Zachary Tellman. **All rights reserved.** — <https://elementsofclojure.com>
+## Provenance and license
 
-It was produced for **personal use** from a purchased copy. It is **not licensed for redistribution**, and
-this repository should remain **private** unless and until the author grants permission. If you find this
-useful, **buy the book** — it is excellent and far richer than any condensation.
+The content in `skills/clj-design/guide/` is a condensed, source-faithful distillation of Zachary
+Tellman's *Elements of Clojure* (<https://elementsofclojure.com>), adapted with the author's permission.
 
-All design insights are Tellman's; any errors introduced by condensation are not his. The skill scaffolding
-(routing, review procedure, tooling) is the only original part.
+This work uses the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license. See the `LICENSE`
+file. If you give credit, you can share and adapt the work. The design insights are Tellman's. The
+condensation, the seven lenses, the code-time checks, and the skill scaffolding are my own. If you find
+this useful, buy the book. It is excellent, and far richer than this condensation.

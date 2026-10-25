@@ -1,0 +1,30 @@
+{
+  "name": "clj-design",
+  "owner": {
+    "name": "crinklywrappr",
+    "url": "https://github.com/crinklywrappr"
+  },
+  "description": "clj-design: Elements-of-Clojure design guidance for Claude Code.",
+  "plugins": [
+    {
+      "name": "clj-design",
+      "source": "./",
+      "displayName": "clj-design",
+      "description": "Elements-of-Clojure design guidance: naming, idioms, indirection, and composition as lenses, code-time checks, and an advise/review skill.",
+      "version": "1.0.0",
+      "author": {
+        "name": "crinklywrappr"
+      },
+      "homepage": "https://github.com/crinklywrappr/clj-design",
+      "repository": "https://github.com/crinklywrappr/clj-design",
+      "license": "CC-BY-4.0",
+      "keywords": [
+        "clojure",
+        "design",
+        "code-review",
+        "elements-of-clojure",
+        "claude-code"
+      ]
+    }
+  ]
+}
